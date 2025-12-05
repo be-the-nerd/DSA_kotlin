@@ -13,6 +13,7 @@ fun main() {
     iteratingOverArrays()
     commonOperations()
     arrayExtensions() //Extension functions for array
+    convertArrayToCollections()
 }
 
 fun createArrays() {
@@ -117,4 +118,13 @@ fun arrayExtensions() {
     println("Is there any even number in array: $hasEven")
     val allEven = arr.all { it % 2 == 0 } //checks if all elements satisfy a condition
     println("If all element satisfies a condition: $allEven")
+}
+
+fun convertArrayToCollections() {
+    val arr = arrayOf("a", "b", "c", "d", "e")
+    println("\nConverted into a Set: ${arr.toSet()}")  //Converts to a Set
+    println("Converted into a List: ${arr.toList()}")  //Converts to a List
+
+    val pairArray = arrayOf("apple" to 120, "banana" to 150, "cherry" to 90, "apple" to 140)
+    println("Converted into a Map: ${pairArray.toMap()}")  //Converts to a Map
 }
