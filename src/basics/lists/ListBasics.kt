@@ -4,6 +4,8 @@ import java.util.LinkedList
 
 /**
  * List<T> : A read-only list.
+ * Maintains specific order.
+ * Allows null and duplicate values.
  * MutableList<T> : A list that supports modification operations such as adding, removing or updating elements.
  * Mutable collections aren't COVARIANT
  */
